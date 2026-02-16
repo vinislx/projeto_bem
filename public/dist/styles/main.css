@@ -367,9 +367,14 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 4vw;
+  padding: 4vh 7vw;
   position: absolute;
   z-index: 9;
+}
+header img {
+  width: 6vw;
+  height: 5vh;
+  align-items: center;
 }
 
 section {
