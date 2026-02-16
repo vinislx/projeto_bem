@@ -1,0 +1,41 @@
+.secaoDepoimentos {
+    flex-direction: column;
+
+    .logotipos {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    }
+
+    .depoimentos {
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+
+    .depoimento {
+        width: 31%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .secaoDepoimentos {
+        .logotipos {
+            img:nth-child(1),
+            img:nth-child(3) {
+                width: 20%;
+            }
+        img:nth-child(2) {
+            width: 40%;
+        }
+    }
+
+    .depoimentos {
+        flex-direction: column;
+        gap: 48px;
+        .depoimento {
+            width: 100%;
+            }
+        }
+    }
+}

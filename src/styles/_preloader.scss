@@ -1,0 +1,23 @@
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0102;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+
+    svg {
+    width: 40vw;
+    height: auto;
+    }
+
+    path {
+    fill: #9016186e;
+    stroke:#901618;
+    stroke-dasharray:1150;
+    stroke-dashoffset: 1150;
+    }
+}

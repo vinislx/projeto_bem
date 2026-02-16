@@ -1,0 +1,135 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../dist/imagens/bg-footer.webp");
+    background-size: cover;
+    background-position: center;
+
+.conteudoFooter {
+    display: flex;
+    width: 100%;
+    padding: 7vw;
+
+    .logoFooter {
+        width: 30%;
+        h3 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+        h2 {
+        font-size: 3.7vw;
+        font-family: "Benguiat";
+        }
+    }
+
+    .secoesFooter {
+        display: flex;
+        flex: 1;
+        justify-content: end;
+        gap: 6%;
+        align-items: end;
+
+        h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        }
+
+        .social {
+        ul {
+            display: flex;
+            gap: 12px;
+            }
+        }
+    }
+}
+
+    .logotiposFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+    }
+
+    .textoInfinito {
+    width: max-content;
+    display: flex;
+
+    h3 {
+        color: rgb(191, 191, 191);
+        font-size: 12vw;
+        font-family: "Benguiat", sans-serif;
+        mix-blend-mode: color-dodge;
+        animation: textoInfinito 10s infinite linear;
+        padding-left: 8vw;
+        }
+    }
+}
+
+@keyframes textoInfinito {
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    footer {
+        padding-top: 40px;
+            .conteudoFooter {
+                padding: 4vw;
+                flex-direction: column;
+        
+            .logoFooter {
+                width: 100%;
+        
+                h2,
+                h3 {
+                    text-align: center;
+                }
+                h2 {
+                    font-size: 12vw;
+                }
+            }
+
+        .secoesFooter {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+    
+        .social {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 40px 0px 32px;
+        }
+    
+        .institucional {
+            width: 40%;
+        }
+    
+        .parceiro {
+            width: 50%;
+    
+            img {
+            width: 100%;
+            }
+        }
+        }
+        }
+    
+    .logotiposFooter {
+        margin-top: 40px;
+    }
+    
+    .textoInfinito h3{
+        font-size: 20vw;
+        }
+    }
+}

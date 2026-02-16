@@ -1,0 +1,74 @@
+.bgMonstro {
+    background-image: url("../../dist/imagens/bg-sec2.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.secaoCidade {
+  flex-direction: column;
+
+  .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      background-image: url("../../dist/imagens/card1.webp");
+      width: 32%;
+      aspect-ratio: 16/9;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .card:nth-child(2) {
+      background-image: url("../../dist/imagens/card2.webp");
+    }
+
+    .card:nth-child(3) {
+      background-image: url("../../dist/imagens/card3.webp");
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .secaoCidade {
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .secaoCidade .cards .card {
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 600px) {
+    .secaoCidade {
+    margin-top: 80px;
+    button {
+      display: none;
+    }
+
+    .cards {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 20px;
+
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
